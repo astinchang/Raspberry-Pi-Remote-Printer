@@ -1,0 +1,22 @@
+[Unit]
+Description=Telegram Receipt Printer
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=piprinter67
+Group=piprinter67
+SupplementaryGroups=lp
+
+WorkingDirectory=/home/piprinter67/telegram-printer
+EnvironmentFile=/home/piprinter67/telegram-printer/config.env
+
+ExecStart=/home/piprinter67/telegram-printer/.venv/bin/python /home/piprinter67/telegram-printer/bot.py
+
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
