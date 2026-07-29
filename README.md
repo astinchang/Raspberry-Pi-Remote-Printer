@@ -1,7 +1,7 @@
 # Raspberry-Pi-Remote-Printer
 
-A Raspberry Pi-based system that receives Telegram messages and prints them
-on a Rongta USB thermal receipt printer.
+A Raspberry Pi-based system that receives Telegram messages from anywhere and prints them on a Rongta USB thermal receipt printer. <br>
+Great for if you want to physically create reminders at home for cool ideas or chores! 
 
 ## Features
 
@@ -16,7 +16,7 @@ on a Rongta USB thermal receipt printer.
 
 - Raspberry Pi Zero W
 - Rongta USB thermal receipt printer
-- USB connection between the Pi and printer
+- RP connected w/ micro USB to USB A female, then USB A to USB B on printer
 
 ## System Architecture
 
